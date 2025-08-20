@@ -15,8 +15,8 @@ body {
 }
 
 .profile-card {
-    width: 300px;
-    height: 350px;
+    width: 350px;
+    height: 550px;
     background: #f6ffff;
     border-radius: 30px;
     position: relative;
@@ -150,6 +150,7 @@ body {
 .profile-card:hover .action-area {
     top: 95px;
 }
+
 
 
 
