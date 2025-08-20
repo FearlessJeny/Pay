@@ -15,8 +15,8 @@ body {
 }
 
 .profile-card {
-    width: 350px;
-    height: 550px;
+    width: 380px;
+    height: 600px;
     background: #f6ffff;
     border-radius: 30px;
     position: relative;
@@ -190,3 +190,4 @@ body {
 .profile-card:hover .social-icon {
     opacity: 1; /* лайки появляются */
 }
+
