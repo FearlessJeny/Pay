@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,35 +13,55 @@
 </head>
 
 <body>
-   
+
 
     <div class="profile-card">
         <div class="images">
-            <img src="kosty.jpeg" alt="kosty">
+            <img src="fredi.JPG" alt="Самокат32323">
         </div>
 
-        <div class="info-section">
+        <div class="info-section ">
             <div class="bio">
-                <h2 class="name">Kostya</h2>
-                <p class="role">HAWMAL</p>
-                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ipsam quod nulla nobis commodi consectetur?</p>
+
+                <div class="tex">
+                    <h2 class="name">Самокат</h2>
+                </div>
+
+                <div class="tex-info">
+                    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ipsam quod
+                        nulla nobis commodi consectetur?</p>
+                </div>
+
+                <div class="rpice">
+                    <p>30 ₪</p>
+                </div>
+
             </div>
+
+
             <div class="action-area">
-                
                 <div class="intro-text">
-                    <p >Samokat s1 xmi</p>
+                    <p>privetiki</p>
                 </div>
-                
+
                 <div class="social-icon">
-                    <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href=""><i class="fa-solid fa-mobile-screen-button"></i></a>
-                    <!-- <a href=""><i class="fa-solid fa-location-dot"></i></a> -->
+                    <a href="https://wa.me/9720532570604" data-phone="9720532570604" class="whatsapp-btn">
+                        <i class="fa-brands fa-whatsapp"></i></a>
+
+                    <a href="#" class="panorama-btn" data-id="1">
+                        <i class="fa-solid fa-panorama"></i>
+                    </a>
+
+                    <a href="#" class="info-btn" data-id="1">
+                        <i class="fa-solid fa-info"></i>
+                    </a>
                 </div>
+
             </div>
         </div>
 
     </div>
+
 
 
     <div class="profile-card">
@@ -52,19 +73,23 @@
             <div class="bio">
                 <h2 class="name">Fredi</h2>
                 <p class="role">ALUMIN</p>
-                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ipsam quod nulla nobis commodi consectetur?</p>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ipsam quod
+                    nulla nobis commodi consectetur?</p>
             </div>
-        <div class="action-area">
-            <div class="social-icon">
-                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                <a href=""><i class="fa-solid fa-mobile-screen-button"></i></a>
-                <a href=""><i class="fa-solid fa-location-dot"></i></a>
-            </div>
-            <!-- <div class="project">
+            <div class="action-area">
+                <div class="social-icon">
+                    <a href="https://wa.me/972533301805" data-phone="972533301805" class="whatsapp-btn data-phone">
+                        <i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" class="info-btn" data-id="2">
+                        <i class="fa-solid fa-info"></i>
+                    </a>
+                    <a href=""><i class="fa-solid fa-mobile-screen-button"></i></a>
+                    <a href=""><i class="fa-solid fa-location-dot"></i></a>
+                </div>
+                <!-- <div class="project">
                 <a href="" class="project-link">View Project</a>
             </div> -->
-        </div>
+            </div>
         </div>
 
     </div>
@@ -79,7 +104,8 @@
             <div class="bio">
                 <h2 class="name">Alena</h2>
                 <p class="role">Nails</p>
-                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ipsam quod nulla nobis commodi consectetur?</p>
+                <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ipsam quod
+                    nulla nobis commodi consectetur?</p>
             </div>
             <div class="action-area">
                 <div class="social-icon">
@@ -97,6 +123,30 @@
     </div>
 
 
+    <div id="product-panoramas" style="display:none;">
+        <div class="panorama-set" data-id="1">
+            <img src="kosty.jpeg" alt="">
+            <img src="fredi.JPG" alt="">
+            <img src="alenails.jpeg" alt="">
+        </div>
+        <div class="panorama-set" data-id="2">
+            <img src="panorama4.jpg" alt="">
+            <img src="panorama5.jpg" alt="">
+        </div>
+    </div>
+
+
+
+    <div id="product-descriptions" style="display:none;">
+        <div class="description" data-id="1">
+            Это подробное описание товара Самокат. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </div>
+        <div class="description" data-id="2">
+            2222222222222222222222222222
+        </div>
+    </div>
+
+    <script src="js.js"></script>
 </body>
 
 </html>
