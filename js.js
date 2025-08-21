@@ -18,10 +18,14 @@ document.querySelectorAll('.whatsapp-btn').forEach(btn => {
 document.querySelectorAll('.panorama-btn').forEach(btn => {
     btn.addEventListener('click', function (e) {
         e.preventDefault();
-        const images = JSON.parse(this.getAttribute('data-images'));
+        const id = this.getAttribute('data-id');
+        const set = document.querySelector(`#product-panoramas .panorama-set[data-id="${id}"]`);
+        if (!set) return;
+
+        const images = Array.from(set.querySelectorAll('img')).map(img => img.src);
         let current = 0;
 
-        // Создаём модалку
+        // Создаём модальное окно
         const modal = document.createElement('div');
         modal.classList.add('modal');
         modal.innerHTML = `
@@ -48,21 +52,17 @@ document.querySelectorAll('.panorama-btn').forEach(btn => {
             showImage(current);
         }
 
-        // Свайп для телефонов
+        // Свайп для мобильных
         let startX = 0;
         modalImg.addEventListener('touchstart', e => { startX = e.touches[0].clientX; });
         modalImg.addEventListener('touchend', e => {
             let endX = e.changedTouches[0].clientX;
-            if (startX - endX > 50) { // свайп влево
-                current = (current + 1) % images.length;
-                showImage(current);
-            } else if (endX - startX > 50) { // свайп вправо
-                current = (current - 1 + images.length) % images.length;
-                showImage(current);
-            }
+            if (startX - endX > 50) { current = (current + 1) % images.length; showImage(current); }
+            else if (endX - startX > 50) { current = (current - 1 + images.length) % images.length; showImage(current); }
         });
     });
 });
+
 
 
 
